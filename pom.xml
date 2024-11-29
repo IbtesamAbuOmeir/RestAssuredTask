@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>RestAssuredRequests</groupId>
+    <artifactId>RestAssuredRequests</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- RestAssured Dependency -->
+       <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.5.0</version>
+</dependency>
+
+        <!-- JSONPath for parsing JSON -->
+     <!-- https://mvnrepository.com/artifact/com.jayway.jsonpath/json-path -->
+<dependency>
+    <groupId>com.jayway.jsonpath</groupId>
+    <artifactId>json-path</artifactId>
+    <version>2.9.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.networknt/json-schema-validator -->
+
+        <!-- TestNG for unit testing -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.0</version>
+            <scope>test</scope>
+        </dependency>
+        
+<!-- https://mvnrepository.com/artifact/org.json/json -->
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20240303</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.11.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.github.scribejava/scribejava-apis -->
+<dependency>
+    <groupId>com.github.scribejava</groupId>
+    <artifactId>scribejava-apis</artifactId>
+    <version>8.3.3</version>
+    <scope>runtime</scope>
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/xml-apis/xml-apis -->
+<dependency>
+    <groupId>xml-apis</groupId>
+    <artifactId>xml-apis</artifactId>
+    <version>2.0.2</version>
+</dependency>
+
+<dependency>
+		<groupId>org.hamcrest</groupId>
+		<artifactId>hamcrest-core</artifactId>
+		<version>1.3</version>
+		<scope>test</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.github.java-json-tools/json-schema-validator -->
+  <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>5.3.0</version>
+        <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    <groupId>com.github.java-json-tools</groupId>
+    <artifactId>json-schema-validator</artifactId>
+    <version>2.2.14</version>
+</dependency>
+
+
+    </dependencies>
+
+    <build>
+    <sourceDirectory>src/main/java</sourceDirectory> <!-- Corrected source directory -->
+        
+        <plugins>
+            <!-- Compiler plugin configuration -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>17</release> 
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
